@@ -13,7 +13,7 @@ export default function ReviewsPage() {
             <div className="max-w-2xl mx-auto text-center space-y-6">
               <div className="code-snippet max-w-md mx-auto mb-8">
                 <code className="text-xs text-muted-foreground">
-                  function review() {"{}"} const rating = 5 <Review /> useState() return ( export default import React feedback.map() // Excellent course! /* Highly recommended */
+                  {`function review() { const rating = 5; /* <Review /> */ useState(); return (/* ... */); } export default review; // feedback.map() // Excellent course! /* Highly recommended */`}
                 </code>
               </div>
 
@@ -26,7 +26,7 @@ export default function ReviewsPage() {
 
               <div className="code-snippet max-w-md mx-auto mt-8">
                 <code className="text-xs text-muted-foreground">
-                  // reviews.map((review) => {"{"} // {"}"})
+                  {`// reviews.map((review) => { /* render review */ })`}
                 </code>
               </div>
             </div>
